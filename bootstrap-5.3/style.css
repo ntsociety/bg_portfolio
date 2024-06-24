@@ -1,0 +1,161 @@
+/* générale */
+/* variables */
+:root{
+    --bgColor: #040404;
+    --primaryColor: #165496;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eee;
+}
+
+
+
+/* navbar */
+.navbar-brand .logo-img{
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 6px;
+}
+.navbar{
+    background-color: var(--bgColor) !important;
+}
+
+.navbar ul li a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar ul li a.active{
+    color: var(--primaryColor) !important;
+}
+.navbar ul li a:hover{
+    color: var(--primaryColor) !important;
+    border: 2px solid var(--primaryColor);
+}
+.navbar ul li.dropdown a{
+    color: white;
+}
+.navbar ul li.dropdown ul li a{
+    color: var(--bgColor);
+}
+
+/* bannière */
+.banner{
+    background-color: var(--bgColor);
+}
+.banner .banner-img{
+    background: url(../images/back_profil.png) no-repeat center/contain fixed;
+}
+.banner .banner-overlay{
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-overlay h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* about */
+section#about .container{
+    background-color: white;
+    padding: 50px;
+    margin-top: 50px;
+}
+section#about .trai{
+    height: 2px;
+    width: 150px;
+    background-color: var(--primaryColor);
+    margin-bottom: 30px;
+}
+section#about h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: var(--primaryColor);
+}
+section#about .progress-bar{
+    background-color: var(--primaryColor) !important;
+}
+
+/* services */
+section#services .trai{
+    height: 5px;
+    width: 50px;
+    background-color: var(--primaryColor);
+    margin-bottom: 30px;
+    margin: 0 auto 30px;
+}
+section#services .boite-icon .bi{
+    font-size: 40px;
+}
+section#services .boite-icon{
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    border: 10px solid var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    cursor: pointer;
+}
+section#services .card:hover .boite-icon .bi{
+    color: white !important;
+}
+section#services .card:hover .boite-icon{
+    background-color: var(--primaryColor);
+    border: 10px solid rgb(155, 197, 213);
+    transition-duration: 0.5s;
+}
+/* work */
+section#work{
+    background: url(../images/post-3.jpg)no-repeat center/cover fixed;
+}
+section#work .overlay{
+    height: 450px;
+    background-color: rgba(0, 0, 255, 0.6);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#work .boite-icon{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: 9px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+}
+section#work .boite-icon .bi{
+    font-size: 30px;
+    color: white;
+}
+section#work h3{
+    font-size: 35px;
+}
+
+
+
+/* mobile */
+@media (max-width:425px) {
+    .banner .banner-overlay{
+        height: 350px;
+    }
+}
